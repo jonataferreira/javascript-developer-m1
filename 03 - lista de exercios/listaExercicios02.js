@@ -15,7 +15,7 @@ IMC em adultos Condição:
 
 const pesoKg = 80;
 const alturaM = 1.80;
-const ICM = pesoKg / (alturaM*alturaM);
+const ICM = pesoKg / Math.pow(alturaM, 2);
 
 if (ICM < 18.5 ) {
     console.log("Abaixo do peso!");
