@@ -37,4 +37,4 @@ function classificarIMC(ICM){
     console.log(classificarIMC(IMC));
 })(); //Função autoexecutável
 
-//main();
+//main();//
