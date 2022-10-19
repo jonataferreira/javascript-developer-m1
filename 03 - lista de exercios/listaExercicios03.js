@@ -8,13 +8,13 @@ Código Condição de pagamento:
 - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;*/
 
 const precoBase = 100;
-const tipoPagamento = 'Dinheiro';
+const tipoPagamento = 3;
 
-if (tipoPagamento === 'Débito' ) {
+if (tipoPagamento === 1) {
     console.log("Valor a pagar: R$ " + ((precoBase)-(precoBase*0.10)).toFixed(2));
-} else if (tipoPagamento === 'Pix' ||  tipoPagamento === 'Dinheiro' ){
+} else if (tipoPagamento === 2 || tipoPagamento === 3){
     console.log("Valor a pagar: R$ " + ((precoBase)-(precoBase*0.15)).toFixed(2));
-} else if (tipoPagamento === 'Parcelamento em 2x'){
+} else if (tipoPagamento === 4){
     console.log("Valor a pagar: R$ " + precoBase.toFixed(2));
 } else{
     console.log("Valor a pagar: R$ " + (precoBase+precoBase*0.10).toFixed(2));
